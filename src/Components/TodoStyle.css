@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 200px;
+  height: 350px;
+  background: rgb(50, 170, 184);
+  background: linear-gradient(
+    180deg,
+    rgba(50, 170, 184, 1) 0%,
+    rgba(180, 236, 242, 1) 80%
+  );
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+.header {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .title {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.header .icon {
+  position: absolute;
+  left: 5%;
+  font-size: 10px;
+}
+.upcoming {
+  height: 40%;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+.label {
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.item {
+  font-size: 10px;
+  font-weight: 600;
+  background: white;
+  border-radius: 3px;
+  color: black;
+  height: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  padding-left: 10px;
+  margin: 5px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item .icon_group {
+  padding-right: 7px;
+}
+.item .icon_group img {
+  margin: 0 3px;
+  cursor: pointer;
+}
+.finished {
+  height: 30%;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+.finished .item {
+  background: rgba(50, 170, 184, 1);
+  color: white;
+}
+.done {
+  text-decoration: line-through;
+}
+.add {
+  height: 35px;
+  width: 35px;
+  background: white;
+  position: fixed;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  left: 50%;
+  bottom: 12%;
+  transform: translateX(-50%);
+}
+.add img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(50, 170, 184, 1);
+  cursor: pointer;
+}
+.header input {
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  width: 90%;
+  padding: 5px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.empty {
+  margin-top: 15px;
+}
+.empty .content_empty {
+  background: #ddd;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  opacity: 0.5;
+  color: black;
+  font-weight: 600;
+}
+
+.modal {
+  width: 50%;
+  outline: none;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
